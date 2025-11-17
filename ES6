@@ -1,0 +1,52 @@
+Declaration With let Keyword
+{
+    // block of code
+
+    // declare variable with let
+    let name = "Peter";
+
+    // can be accessed here
+    console.log(name); // Peter
+}
+
+// can't be accessed here
+console.log(name);
+
+
+Peter
+ERROR!
+...
+ReferenceError: name is not defined
+
+{
+    // block of code
+
+    // declare variable with var
+    var name = "Peter";
+
+    // can be accessed here
+    console.log(name);
+}
+
+// can be accessed here
+console.log(name);
+
+Peter
+Peter
+
+Declaration With const Keyword
+
+// declare variable with const
+const fruit = "Apple";
+
+console.log(fruit);
+
+// reassign fruit
+// this code causes an error
+fruit = "Banana";
+
+console.log(fruit);
+
+Apple
+Error: Assignment to constant variable
+
